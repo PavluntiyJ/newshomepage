@@ -143,9 +143,16 @@ gap: 1.8rem;
 }
 
 .article-heading{
+  display: inline-block;
 font-size: 1.8rem;
 font-weight: 700;
-color:hsl(240, 100%, 5%)
+color:hsl(240, 100%, 5%);
+text-decoration: none;
+transition: all 0.3s;
+}
+
+.article-heading:hover, .article-heading:active{
+color: hsl(5, 85%, 63%);
 }
 
 .bottom-description{
