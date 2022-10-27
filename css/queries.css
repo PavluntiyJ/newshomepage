@@ -1,0 +1,48 @@
+
+@media (max-width: 25em){
+
+html{
+  font-size: 50%;
+}
+
+main, .grid, .grid--col--1{
+  grid-template-columns: 1fr;
+}
+
+  .main-nav-list{
+    transition: all 0.5s ease-in;
+  /* 1) Hide it visually */
+  opacity: 0;
+
+  /* 2) Make it unaccessible to mouse and keyboard */
+  pointer-events: none;
+  /* Hide it from screen readers */
+  visibility: hidden;
+  gap: 2rem;
+  }
+
+  .img-div{
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .article-heading{
+    grid-column: 1 ;
+    grid-row: 2;
+  }
+
+.article-body{
+  grid-column: 1 / 1;
+  grid-row: 3 ;
+  padding: 3.8rem 0;
+}
+
+.aside{
+  grid-column: 1 / 1;
+  grid-row: 4;
+}
+/* .division{
+  grid-column: 1 / 1;
+  grid-row: 5;
+} */
+}
